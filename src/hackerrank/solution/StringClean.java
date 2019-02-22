@@ -1,3 +1,4 @@
+package hackerrank.solution;
 
 public class StringClean {
 	

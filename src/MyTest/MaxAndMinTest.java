@@ -1,7 +1,5 @@
 package MyTest;
 
-
-
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.logging.Logger;
@@ -65,9 +63,9 @@ public class MaxAndMinTest {
 	@Test
 	public void SquareA() {
 		
-		int result = t.square(10);
+		int result = t.square(5);
 		
-		assertTrue(result == 100);
+		assertTrue(result == 25);
 	}
 
 }
