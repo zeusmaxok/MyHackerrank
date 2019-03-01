@@ -3,18 +3,16 @@ package hackerrank.solution;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Hashtable;
-import java.util.Queue;
 import java.util.Scanner;
-import java.util.concurrent.LinkedBlockingQueue;
 
-public class MyHashTable {
+public class RansonNotes {
 
 	static void checkMagazine(String[] magazine, String[] note) {
 
 		if (magazine.length < note.length) {
 			System.out.println("No");
 			return;
-		}
+		}		
 
 		Hashtable<String, Integer> h1 = new Hashtable<>();
 
@@ -25,6 +23,7 @@ public class MyHashTable {
 			} else {
 				h1.put(str, 1);
 			}
+			
 			
 			//2. h1.merge(str, 1, Integer::sum); remapping function
 			

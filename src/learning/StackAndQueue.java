@@ -1,5 +1,8 @@
 package learning;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Iterator;
 import java.util.Queue;
 import java.util.Stack;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -14,13 +17,44 @@ public class StackAndQueue {
 		q.poll(); // retrieve and remove the element at head
 		q.peek(); // retrieve but not remove the element at head
 		
-		Stack<Character> s = new Stack<>();
+		//Stack<Character> s = new Stack<>(); 
+		Deque<Character> s = new ArrayDeque<Character>();
+		
+		
 		
 		s.push('a');
+		s.push('b');
+		s.push('c');
+		s.push('d');
+		s.push('e');
+		s.push('f');
+		s.push('g');
 		
-		s.pop();
+		Iterator<Character> i1 = s.iterator();
+		
+		while(i1.hasNext()) {
+			System.out.println(i1.next());
+		}
+		//s.pop();
 
-		System.out.println(3/2);
+		//System.out.println(3/2);
+		
+		
+	}
+	
+	
+	static void sample() {
+		char[] chars = {'a', 'b', 'c'};
+		
+		String a = new String(chars);
 	}
 
+}
+
+class Ray {
+	public String getRay() {return new String("ray");}
+	
+	int getInt() {
+		return 0;
+	}
 }

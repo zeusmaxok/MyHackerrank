@@ -1,6 +1,7 @@
 package hackerrank.solution;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class MyClass {
@@ -13,6 +14,8 @@ public class MyClass {
 		List<Integer> result = cellComplete(case2, 2);
 		
 		System.out.println(result.toString());
+		
+		System.out.println(myInt());
 
 	}
 	
@@ -61,6 +64,14 @@ public class MyClass {
 		}else {
 			return 1;
 		}		
+	}
+	
+	private static int myInt() {
+		int[] set = new int[5];
+		
+		Arrays.fill(set, 0, 5, 5);
+		
+		return set[4];
 	}
 
 }
