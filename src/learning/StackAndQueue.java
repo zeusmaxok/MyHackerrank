@@ -4,7 +4,6 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Iterator;
 import java.util.Queue;
-import java.util.Stack;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class StackAndQueue {
@@ -47,6 +46,10 @@ public class StackAndQueue {
 		char[] chars = {'a', 'b', 'c'};
 		
 		String a = new String(chars);
+		
+		a = a + "Hello";
+		
+		System.out.println(a);
 	}
 
 }

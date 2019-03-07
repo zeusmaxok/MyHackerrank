@@ -2,15 +2,15 @@ package learningSet;
 
 import java.util.Arrays;
 
-public class Set {
+public class Set <T extends Comparable<T>>{
 	
-	int[] set;
+	Object[] set;
 	int size;
 	int capacity;
 	
 	public Set(int _capacity) {
 		this.capacity = _capacity;
-		set = new int[capacity];
+		set = new Object[capacity];
 		size = 0;
 	}
 
@@ -18,7 +18,7 @@ public class Set {
 		return size == 0;
 	}
 
-	public void add(int i) {		
+	public void add(T i) {		
 		
 		if(size == capacity) {
 			set = Arrays.copyOf(set, capacity*2);
@@ -30,19 +30,13 @@ public class Set {
 		//System.out.println("Size: " + size);
 	}
 
-	public boolean contains(int i) {
-		for(int x: set) {
+	public boolean contains(Object i) {
+		for(Object x: set) {
 			if(x == i) {
 				return true;
 			}
 		}
 		return false;
-	}
-	
-	public void printArray() {
-
-		for(int x: set)
-			System.out.println(x);
 	}
 
 	public int size() {
@@ -50,7 +44,7 @@ public class Set {
 		return size;
 	}
 
-	public void remove(int i) {
+	public void remove(T i) {
 		
 		for(int j = 0; j < size; j++) {
 			if(set[j] == i) {
@@ -59,6 +53,11 @@ public class Set {
 		}
 		
 		size--;
-	}	
+	}
+	
+	public void printArray() {
 
+		for(Object x: set)
+			System.out.println(x);
+	}
 }

@@ -9,13 +9,13 @@ import org.junit.Test;
 
 public class SetTest {
 	
-	private Set one;
-	private Set many;
+	private Set<Integer> one;
+	private Set<Integer> many;
 	
 	@Before
 	public void setUp() {
-		one = new Set(10);
-		many = new Set(5);
+		one = new Set<Integer>(10);
+		many = new Set<Integer>(5);
 		
 		many.add(0);
 		many.add(1);
@@ -24,6 +24,8 @@ public class SetTest {
 		many.add(4);
 		many.add(5);
 		many.add(6);
+		
+		//Collections.sort(many);
 	}
 
 	@Test
@@ -45,11 +47,10 @@ public class SetTest {
 	@Test
 	public void containsTest() {
 		
-		
-		
-		//many.printArray();
-		
-		assertTrue(many.contains(6));
+		assertTrue(many.contains(1));
+		assertTrue(many.contains(0));
+		assertTrue(many.contains(4));
+		assertTrue(many.contains(5));
 		assertFalse(many.contains(9));
 	}
 	
@@ -62,9 +63,15 @@ public class SetTest {
 	@Test
 	public void removeTest() {
 		
+		//many.printArray();
+		
 		many.remove(6);
+		many.remove(5);
+		many.remove(0);
 		
 		assertFalse(many.contains(6));
+		assertFalse(many.contains(5));
+		assertFalse(many.contains(0));
 	}
 
 }
