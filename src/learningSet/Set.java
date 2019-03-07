@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 public class Set {
 	
-	int[] set;
+	Object[] set;
 	int size;
 	int capacity;
 	
 	public Set(int _capacity) {
 		this.capacity = _capacity;
-		set = new int[capacity];
+		set = new Object[capacity];
 		size = 0;
 	}
 
@@ -18,7 +18,7 @@ public class Set {
 		return size == 0;
 	}
 
-	public void add(int i) {		
+	public void add(Object i) {		
 		
 		if(size == capacity) {
 			set = Arrays.copyOf(set, capacity*2);
@@ -30,8 +30,8 @@ public class Set {
 		//System.out.println("Size: " + size);
 	}
 
-	public boolean contains(int i) {
-		for(int x: set) {
+	public boolean contains(Object i) {
+		for(Object x: set) {
 			if(x == i) {
 				return true;
 			}
@@ -41,7 +41,7 @@ public class Set {
 	
 	public void printArray() {
 
-		for(int x: set)
+		for(Object x: set)
 			System.out.println(x);
 	}
 
@@ -50,7 +50,7 @@ public class Set {
 		return size;
 	}
 
-	public void remove(int i) {
+	public void remove(Object i) {
 		
 		for(int j = 0; j < size; j++) {
 			if(set[j] == i) {

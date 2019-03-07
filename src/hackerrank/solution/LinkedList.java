@@ -39,6 +39,10 @@ public class LinkedList {
         display(head);
         sc.close();
     }
+    
+    public static void main() {
+    	
+    }
 }
 
 

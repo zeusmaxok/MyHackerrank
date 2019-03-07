@@ -59,4 +59,8 @@ public class BirthdayCakeCandles {
 
         scanner.close();
     }
+    
+    public static void main() {
+    	
+    }
 }

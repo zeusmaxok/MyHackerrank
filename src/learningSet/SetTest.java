@@ -24,6 +24,8 @@ public class SetTest {
 		many.add(4);
 		many.add(5);
 		many.add(6);
+		
+		
 	}
 
 	@Test
