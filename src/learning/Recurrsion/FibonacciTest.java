@@ -1,4 +1,4 @@
-package learningRecurrsion;
+package learning.Recurrsion;
 
 import static org.junit.Assert.*;
 

@@ -1,4 +1,4 @@
-package learningSet;
+package learning.Set;
 
 import java.util.Arrays;
 

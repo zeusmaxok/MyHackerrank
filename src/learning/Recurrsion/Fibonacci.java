@@ -1,4 +1,4 @@
-package learningRecurrsion;
+package learning.Recurrsion;
 
 public class Fibonacci {
 	
