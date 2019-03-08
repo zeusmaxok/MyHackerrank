@@ -25,7 +25,11 @@ public class SetTest {
 		many.add(5);
 		many.add(6);
 		
+<<<<<<< HEAD
+		
+=======
 		//Collections.sort(many);
+>>>>>>> refs/remotes/origin/master
 	}
 
 	@Test
